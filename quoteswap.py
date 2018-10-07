@@ -17,7 +17,7 @@ mobyquotes = re.findall('"[^"]*\r\n\r\n|"[^"]*"', moby)
 pridequotes = re.findall('"[^"]*\r\n\r\n|"[^"]*"', pride)
 
 def quoteswap(quotes1, quotes2, text1):
-    for i in range(len(quotes2[:1535])):
+    for i in range(len(quotes2)):
         text1 = text1.replace(quotes1[i], quotes2[i])
     return text1
     
